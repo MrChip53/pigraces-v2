@@ -60,9 +60,9 @@ void setupMenu(int menuID){
 void showMainMenu(){
 	for(tmpNum = 0; tmpNum < menuLen; tmpNum++){
 		if(tmpNum == selItem)
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), 0);
 		else
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), 0);
 		width = oslGetStringWidth(menuItem[tmpNum].Title);
 		oslDrawString((SCREEN_WIDTH - width) / 2, 50 + (20*tmpNum), menuItem[tmpNum].Title);
 	}
@@ -71,13 +71,13 @@ void showMainMenu(){
 void playGame(){
 	for(tmpNum = 0; tmpNum < menuLen; tmpNum++){
 		if(tmpNum == selItem)
-			oslIntraFontSetStyle(font, 0.6, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.6, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), 0);
 		else
-			oslIntraFontSetStyle(font, 0.6, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.6, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), 0);
 		width = oslGetStringWidth(menuItem[tmpNum].Title);
 		oslDrawString((SCREEN_WIDTH - width) / 2, 20 + (15*tmpNum), menuItem[tmpNum].Title);
 	}
-	oslIntraFontSetStyle(font, 0.6, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), NULL);
+	oslIntraFontSetStyle(font, 0.6, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), 0);
 	sprintf(buffer, "Pig Coins: %d", pigCoins);
 	width = oslGetStringWidth(buffer);
 	oslDrawString((SCREEN_WIDTH - width) / 2, 20 + (15*menuLen), buffer);
@@ -99,9 +99,9 @@ void playGame(){
 void showCredits(){
 	for(tmpNum = 0; tmpNum < menuLen; tmpNum++){
 		if(tmpNum == selItem)
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), 0);
 		else
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), 0);
 		width = oslGetStringWidth(menuItem[tmpNum].Title);
 		oslDrawString((SCREEN_WIDTH - width) / 2, 50 + (20*tmpNum), menuItem[tmpNum].Title);
 	}
@@ -110,9 +110,9 @@ void showCredits(){
 void showSettingsMenu(){
 	for(tmpNum = 0; tmpNum < menuLen; tmpNum++){
 		if(tmpNum == selItem)
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), 0);
 		else
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), 0);
 		width = oslGetStringWidth(menuItem[tmpNum].Title);
 		oslDrawString((SCREEN_WIDTH - width) / 2, 50 + (20*tmpNum), menuItem[tmpNum].Title);
 	}
@@ -121,9 +121,9 @@ void showSettingsMenu(){
 void showMenu(){
 	for(tmpNum = 0; tmpNum < menuLen; tmpNum++){
 		if(tmpNum == selItem)
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), 0);
 		else
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), 0);
 		width = oslGetStringWidth(menuItem[tmpNum].Title);
 		oslDrawString((SCREEN_WIDTH - width) / 2, 50 + (20*tmpNum), menuItem[tmpNum].Title);
 	}
@@ -132,9 +132,9 @@ void showMenu(){
 void showWifiMenu(){
 	for(tmpNum = 0; tmpNum < menuLen; tmpNum++){
 		if(tmpNum == selItem)
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 120, 187, 255), RGBA(0, 0, 0, 0), 0);
 		else
-			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), NULL);
+			oslIntraFontSetStyle(font, 0.7, RGBA(255, 255, 255, 255), RGBA(0, 0, 0, 0), 0);
 		width = oslGetStringWidth(menuItem[tmpNum].Title);
 		oslDrawString((SCREEN_WIDTH - width) / 2, 50 + (20*tmpNum), menuItem[tmpNum].Title);
 	}

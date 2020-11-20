@@ -105,7 +105,7 @@ void getName(){
 		unsigned char hash[SHA_DIGEST_LENGTH];
 		SHA1(finalMac, sizeof(finalMac), hash);
 		sprintf(buffer, "getUser=%s", hash);
-		oslNetPostForm("http://projectapex.org/Projects/PigRaces.php", buffer, response, 255);
+		oslNetPostForm("http://simoni.dev/Projects/PigRaces", buffer, response, 255);
 		sprintf(playerName, "%s", response);
 	}
 }
@@ -116,7 +116,7 @@ void updateName(char *newName){
 		unsigned char hash[SHA_DIGEST_LENGTH];
 		SHA1(finalMac, sizeof(finalMac), hash);
 		sprintf(buffer, "updateName=%s&Name=%s", hash, newName);
-		oslNetPostForm("http://projectapex.org/Projects/PigRaces.php", buffer, response, 255);
+		oslNetPostForm("http://simoni.dev/Projects/PigRaces", buffer, response, 255);
 		if(strcmp(response, "Taken") == 0){
 			sprintf(message, "Sorry but that name is taken!");
 		}else{
@@ -132,7 +132,7 @@ void getMoney(){
 		unsigned char hash[SHA_DIGEST_LENGTH];
 		SHA1(finalMac, sizeof(finalMac), hash);
 		sprintf(buffer, "getMoney=%s", hash);
-		oslNetPostForm("http://projectapex.org/Projects/PigRaces.php", buffer, response, 255);
+		oslNetPostForm("http://simoni.dev/Projects/PigRaces", buffer, response, 255);
 		pigCoins = atoi(response);
 	}
 }
@@ -143,7 +143,7 @@ void updateMoney(){
 		unsigned char hash[SHA_DIGEST_LENGTH];
 		SHA1(finalMac, sizeof(finalMac), hash);
 		sprintf(buffer, "updateMoney=%s&Money=%d", hash, pigCoins);
-		oslNetPostForm("http://projectapex.org/Projects/PigRaces.php", buffer, response, 255);
+		oslNetPostForm("http://simoni.dev/Projects/PigRaces", buffer, response, 255);
 		//sprintf(message, "%s", response);
 	}
 }
